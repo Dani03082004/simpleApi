@@ -6,9 +6,14 @@
             "handler": "UserController::index"
         },
         {
+            "method": "GET",
+            "path": "/api/users/{id}",
+            "handler": "UserController::show"
+        },
+        {
             "method": "POST",
             "path": "/api/users",
-            "handler": "UserController::store"
+            "handler": "UserController::create"
         }
     ]
 }
